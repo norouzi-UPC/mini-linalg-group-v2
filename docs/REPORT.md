@@ -20,3 +20,5 @@ PR links:
 
 During integration we kept the NumPy classes, Hamed's tests and the batch tests.
 CI results and the commit history can be seen on GitHub.
+
+We moved Vector, Matrix and batch functions into separate files and removed core.py.

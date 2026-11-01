@@ -2,35 +2,25 @@
 
 Scientific Programming and Large Scale Computing - group assignment 1.
 
-## Team
+Team: MohammadJavad Norouzi; Aland Arif; Hamed Zahraei Ramazani; Wenyuan Huang.
 
-| Member | Main responsibility |
-| --- | --- |
-| MohammadJavad Norouzi | Batch operations; coordinate CI and the shared refactor |
-| Aland Arif | Pure Python matrix-vector and matrix-matrix products |
-| Hamed Zahraei Ramazani | Pytest suite and dimension mismatch tests |
-| Wenyuan Huang | NumPy storage and vectorized products |
+## Files
 
-## Initial structure
+- `src/mini_linalg/vector.py`: Vector.
+- `src/mini_linalg/matrix.py`: Matrix and its products.
+- `src/mini_linalg/batch.py`: batch products.
+- `tests/test_core.py`: tests using the public package.
+- `docs/REPORT.md`: short group report.
 
-To be completed. 
+## Setup and checks
 
-## Local setup
+Use Python 3.11 or newer. From the project folder:
 
-To be completed. 
+```powershell
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m flake8 src tests
+```
 
-## Branches and integration order
-
-
-| Order | Branch | Lead | Peer reviewer |
-| --- | --- | --- | --- |
-| 1 | `feature/ci-pipeline` | MohammadJavad / team | Aland |
-| 2 | `feature/pure-python-ops` | Aland | Hamed |
-| 3 | `feature/pytest-suite` | Hamed | Wenyuan |
-| 4 | `feature/numpy-vectorization` | Wenyuan | MohammadJavad |
-| 5 | `feature/batched-operations` | MohammadJavad | Aland |
-| 6 | `feature/modular-refactor` | MohammadJavad / team | Hamed and Wenyuan |
-
-## Documentation
-
-To be completed. 
+The feature branches and pull requests on GitHub show each person's work.
