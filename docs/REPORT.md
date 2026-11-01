@@ -15,14 +15,14 @@
 | feature/ci-pipeline | MohammadJavad / team | [#1](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/1) | Aland approved | Passed |
 | feature/pure-python-ops | Aland | [#4](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/4) | Hamed approved | Passed |
 | feature/pytest-suite | Hamed | [#5](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/5) | Pending | flake8 failed |
-| feature/numpy-vectorization | Wenyuan | [#2](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/2) | Changes requested | To be completed |
+| feature/numpy-vectorization | Wenyuan | [#2](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/2) | MohammadJavad approved | Passed |
 | feature/batched-operations | MohammadJavad | [#3](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/3) | Aland approved | Not run yet |
 | feature/modular-refactor | MohammadJavad / team | To be completed | To be completed | To be completed |
 
 ## Notes
 
 - CI: I added pytest and flake8 checks. Aland approved [PR #1](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/1), and it was merged.
-- NumPy review: I reviewed Wenyuan's [PR #2](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/2) and asked for some fixes. We are waiting for her update.
+- NumPy review: I reviewed Wenyuan's [PR #2](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/2) and asked for fixes. She fixed them, the checks passed, and I approved it.
 - Batches: I added batch matrix-vector and matrix-matrix products in [PR #3](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/3). Locally, 19 tests passed and flake8 passed. The PR is still open.
 
 ## Branch origins
