@@ -3,7 +3,7 @@
 ## Repository and team
 
 - Repository URL: https://github.com/norouzi-UPC/mini-linalg-group-v2
-- Initial main commit: To be completed.
+- Initial main commit: 2bdf01f1b163465663c8a60af6f21a1c2ffa5be7
 - Final main commit: To be completed.
 - Members: MohammadJavad Norouzi; Aland Arif; Hamed Zahraei Ramazani;
   Wenyuan Huang.
@@ -13,10 +13,10 @@
 | Branch | Lead | PR link | Peer approval | CI result |
 | --- | --- | --- | --- | --- |
 | feature/ci-pipeline | MohammadJavad / team | [#1](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/1) | Aland approved | Passed |
-| feature/pure-python-ops | Aland | To be completed | To be completed | To be completed |
-| feature/pytest-suite | Hamed | To be completed | To be completed | To be completed |
+| feature/pure-python-ops | Aland | [#4](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/4) | Hamed approved | Passed |
+| feature/pytest-suite | Hamed | [#5](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/5) | Pending | flake8 failed |
 | feature/numpy-vectorization | Wenyuan | [#2](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/2) | Changes requested | To be completed |
-| feature/batched-operations | MohammadJavad | [#3](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/3) | Pending | To be completed |
+| feature/batched-operations | MohammadJavad | [#3](https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/3) | Aland approved | Not run yet |
 | feature/modular-refactor | MohammadJavad / team | To be completed | To be completed | To be completed |
 
 ## Notes
