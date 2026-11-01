@@ -1,7 +1,7 @@
 # MohammadJavad Norouzi
 
-- Branch and pull request:
-- Changes made:
-- Tests run and results:
-- Peer review given (PR link):
-- Conflict resolved, if applicable:
+- Branch and pull request: feature/batched-operations
+- Changes made: Added batch matrix-vector and matrix-matrix products.
+- Tests run and results: 19 passed. flake8 passed.
+- Peer review given (PR link): None.
+- Conflict resolved, if applicable: None so far.
