@@ -1,59 +1,22 @@
-# Group report
+# MiniLinalg group report
 
-Complete the fields below after the work has actually been done.
+Repository: https://github.com/norouzi-UPC/mini-linalg-group-v2
 
-## Repository and team
+Team: MohammadJavad Norouzi; Aland Arif; Hamed Zahraei Ramazani; Wenyuan Huang.
 
-- Repository URL:
-- Initial main commit (`git rev-parse initial-main`):
-- Final main commit:
-- Members: MohammadJavad Norouzi; Aland Arif; Hamed Zahraei Ramazani;
-  Wenyuan Huang.
-- Four-person allocation: Student 2's pytest and NumPy branches are assigned
-  to Hamed and Wenyuan respectively. CI and the final refactor are shared.
+We used separate branches and pull requests to combine our work.
 
-## Pull requests in integration order
+- Aland: Python matrix-vector and matrix-matrix products, PR #4.
+- Hamed: tests, PR #5.
+- Wenyuan: NumPy arrays and products, PR #2.
+- MohammadJavad: CI, PR #1; batch products, PR #3; integration.
 
-| Branch | Lead | PR link | Peer approval | CI result |
-| --- | --- | --- | --- | --- |
-| feature/ci-pipeline | MohammadJavad / team | | | |
-| feature/pure-python-ops | Aland | | | |
-| feature/pytest-suite | Hamed | | | |
-| feature/numpy-vectorization | Wenyuan | | | |
-| feature/batched-operations | MohammadJavad | | | |
-| feature/modular-refactor | MohammadJavad / team | | | |
+PR links:
+- https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/1
+- https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/4
+- https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/5
+- https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/2
+- https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/3
 
-## Branch origins
-
-Record how all six branches were created from the tagged initial main
-before integration. Link the relevant commit history. Later merge commits
-that bring main into a feature branch are expected.
-
-## Implementation
-
-- Pure Python products: describe the two and three nested loops.
-- NumPy conversion: describe array storage, `@`, and preserved public methods.
-- Batch operations: describe paired lists and stacked array shapes.
-- Modular refactor: list the new files and confirm deletion of `core.py`.
-
-## Conflicts actually resolved
-
-| Branch | File(s) that conflicted | Decision and reason | Resolution commit |
-| --- | --- | --- | --- |
-| | | | |
-
-## Final validation performed by the team
-
-- Local Python version and operating system:
-- Command: `python -m pytest -q`; actual result:
-- Command: `python -m flake8 src tests`; actual result:
-- Coverage command/result, if run:
-- Link to final passing GitHub Actions run:
-- Tests import the public package and do not reference `core.py`:
-- `src/mini_linalg/core.py` is absent:
-
-## Individual contributions
-
-See `docs/contributions/mohammadjavad.md`, `aland.md`, `hamed.md` and
-`wenyuan.md`. Each person completes their own record with actual work and
-peer reviews.
+During integration we kept the NumPy classes, Hamed's tests and the batch tests.
+CI results and the commit history can be seen on GitHub.
