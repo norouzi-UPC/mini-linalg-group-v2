@@ -7,7 +7,7 @@ import numpy as np
 
 
 class Vector:
-        def __init__(self, data):
+    def __init__(self, data):
         self.data = np.array(data, dtype=float)
         if self.data.size == 0:
             raise ValueError("A vector must contain at least one number.")
@@ -23,7 +23,7 @@ class Vector:
 
 
 class Matrix:
-        def __init__(self, data):
+    def __init__(self, data):
         self.data = np.array(data, dtype=float)
         if self.data.ndim != 2 or self.data.size == 0:
             raise ValueError("A matrix must have at least one row and column.")
@@ -49,4 +49,3 @@ class Matrix:
         if self.cols != other.rows:
             raise ValueError("Left matrix columns must match right matrix rows.")
         return Matrix(self.data @ other.data)
-

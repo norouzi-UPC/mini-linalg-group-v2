@@ -1,9 +1,4 @@
-"""Core contract tests extended for the function based products."""
-
-import pytest
-
 from mini_linalg import Matrix, Vector
-from mini_linalg.core import matrix_mul_matrix, matrix_mul_vector
 
 
 def test_vector_copies_input():
@@ -26,6 +21,7 @@ def test_vector_repr():
 
 def test_matrix_repr():
     assert repr(Matrix([[1.0, 2.0]])) == "Matrix([[1.0, 2.0]])"
+
 
 def test_matrix_vector_product():
     matrix = Matrix([[1, 2, 3], [4, 5, 6]])
