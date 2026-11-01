@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-import numpy as np
-
-
-class Vector:
-    def __init__(self, data: list[float]):
-        self.data = list(data)
-=======
 """Core vector and matrix types backed by NumPy arrays.
->>>>>>> origin/main
 
 Method names (mat_vec, mat_mat) and error messages match Aland's code.
 """
@@ -39,9 +30,25 @@ class Matrix:
         if len({row.size for row in self.data}) != 1:
             raise ValueError("All matrix rows must have the same length.")
 
-<<<<<<< HEAD
-    def __repr__(self) -> str:
-        return f"Matrix({self.data})"
+        self.rows = self.data.shape[0]
+        self.cols = self.data.shape[1]
+
+    def __repr__(self):
+        return f"Matrix({self.data.tolist()})"
+
+    def __getitem__(self, key):
+        # Accepts matrix[0, 0], matrix[0][0], and slices alike.
+        return self.data[key]
+
+    def mat_vec(self, vector):
+        if self.cols != len(vector):
+            raise ValueError("Matrix columns must match vector length.")
+        return Vector(self.data @ vector.data)
+
+    def mat_mat(self, other):
+        if self.cols != other.rows:
+            raise ValueError("Left matrix columns must match right matrix rows.")
+        return Matrix(self.data @ other.data)
 
 
 def batch_mat_vec(matrices, vectors):
@@ -88,24 +95,3 @@ def batch_mat_mat(left_matrices, right_matrices):
     for product in products:
         result.append(Matrix(product))
     return result
-=======
-        self.rows = self.data.shape[0]
-        self.cols = self.data.shape[1]
-
-    def __repr__(self):
-        return f"Matrix({self.data.tolist()})"
-
-    def __getitem__(self, key):
-        # Accepts matrix[0, 0], matrix[0][0], and slices alike.
-        return self.data[key]
-
-    def mat_vec(self, vector):
-        if self.cols != len(vector):
-            raise ValueError("Matrix columns must match vector length.")
-        return Vector(self.data @ vector.data)
-
-    def mat_mat(self, other):
-        if self.cols != other.rows:
-            raise ValueError("Left matrix columns must match right matrix rows.")
-        return Matrix(self.data @ other.data)
->>>>>>> origin/main
