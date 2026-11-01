@@ -6,7 +6,7 @@
 
 - Tests run and results:
 
-  ![image-20261031233529593](./assets/image-20261031233529593.png)
+  ![image-20261101105929490](./assets/image-20261101105929490.png)
 
 - Peer review given (PR link): https://github.com/norouzi-UPC/mini-linalg-group-v2/pull/2
 
